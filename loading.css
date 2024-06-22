@@ -1,0 +1,54 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400);
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: black !important;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 400;
+  overflow: hidden;
+  padding: 30px 0 0 30px;
+  text-align: center;
+}
+
+.word {
+  bottom: 0;
+  color: #fff;
+  font-size: 2.5em;
+  height: 2.5em;
+  left: 0;
+  line-height: 2.5em;
+  margin: auto;
+  right: 0;
+  position: absolute;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px rgba(0, 255, 0, 0.8), 0 0 1px rgba(0, 255, 0, 0.8), 0 0 1px rgba(0, 255, 0, 0.8), 0 0 5px rgba(0, 255, 0, 0.8), 0 0 7px rgba(0, 255, 0, 0.8);
+
+  top: 0;
+  z-index: 1000;
+}
+
+.word span {
+  display: inline-block;
+  transform: translateX(100%) scale(0.9);
+  transition: transform 500ms;
+}
+
+.word .done {
+  color: #6f6;
+  transform: translateX(0) scale(1);
+}
+
+.overlay {
+  background-color: black !important;
+  background-size: 1000px 2px;
+  bottom: 0;
+  content: '';
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 500;
+}
